@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "673595241958",
+    "project_id": "horreohevia2eva",
+    "storage_bucket": "horreohevia2eva.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673595241958:android:985f8fa5a2630d8ce49227",
+        "android_client_info": {
+          "package_name": "com.example.horreomiguel2eva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673595241958-5ndteg98q6ek5q46dmcnjqv1m0vcmv7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW0zHVp5asXWlcmNfmLDSPiui9V1g4vr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673595241958-5ndteg98q6ek5q46dmcnjqv1m0vcmv7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

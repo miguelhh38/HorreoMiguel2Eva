@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">HorreoMiguel2Eva</string>
+
+    <!---pantalla principal-->
+    <string name="usuarioTEXT">Usuario:</string>
+    <string name="passTEXT">Contraseña:</string>
+    <string name="button1">INICIAR SESIÓN</string>
+    <string name="button2">REGISTRARME</string>
+    <string name="nombreTEXT">by MiguelHorreo</string>
+
+    <!--pantalla menuagenda-->
+    <string name="button01">NUEVO CONTACTO</string>
+    <string name="button02">CONTACTOS</string>
+
+
+    <!--pantalla agenda-->
+    <string name="tituloTEXT">DATOS DE CONTACTO</string>
+    <string name="nombrecontactoTEXT">Nombre:</string>
+    <string name="infonomTEXT">Debe de introducir el nombre del nuevo contacto.</string>
+    <string name="direccionTEXT">Dirección:</string>
+    <string name="infodirTEXT">Debe de introducir la dirección de nuevo contacto.</string>
+    <string name="emailTEXT">Email:</string>
+    <string name="infomailTEXT">Debe de introducir el email de nuevo contacto</string>
+    <string name="telefonoTEXT">Telefono:</string>
+    <string name="infotelTEXT">Debe de introducir el teléfono de nuevo contacto</string>
+    <string name="buttonGuardar">GUARDAR CONTACTO</string>
+    <string name="buttonCancelar">VOLVER ATRÁS</string>
+
+    <!--pantalla lista-->
+    <string name="buttonEliminar">ELIMINAR</string>
+    <string name="buttonEditar">EDITAR</string>
+    <string name="textList">MIS CONTACTOS</string>
+
+    <!--editar contacto-->
+    <string name="buttonEditarGuardar">GUARDAR CAMBIOS</string>
+    <string name="tituloEditar">EDITAR CONTACTO</string>
+
+    <string name="datoscontacto">DATOS DEL CONTACTO</string>
+    <string name="llamarButton">LLAMAR</string>
+
+    <string name="buttonActualizar">ACTUALIZAR CONTACTO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
