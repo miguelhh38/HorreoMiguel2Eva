@@ -12,6 +12,7 @@ public class MenuAgenda extends AppCompatActivity {
 
     Button nuevoContacto;
     Button buttonLista;
+    Button buttonNota;
     ImageButton buttonImage;
 
     @Override
@@ -41,6 +42,15 @@ public class MenuAgenda extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuAgenda.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonNota = findViewById(R.id.buttonNota);
+        buttonNota.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuAgenda.this, NotaActivity.class);
                 startActivity(intent);
             }
         });

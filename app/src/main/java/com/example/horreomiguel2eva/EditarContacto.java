@@ -31,6 +31,7 @@ public class EditarContacto extends AppCompatActivity {
     EditText emailEditText;
     EditText dirEditText;
     EditText telfEditText;
+    EditText nickEditText;
     private DatabaseReference contactRef;
 
 
@@ -50,6 +51,7 @@ public class EditarContacto extends AppCompatActivity {
         emailEditText = findViewById(R.id.emailEditText);
         dirEditText = findViewById(R.id.dirEditText);
         telfEditText = findViewById(R.id.telfEditText);
+        nickEditText = findViewById(R.id.nickEditText);
 
         volverButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +69,7 @@ public class EditarContacto extends AppCompatActivity {
         dirEditText.setText(contacto.getDireccion());
         telfEditText.setText(contacto.getTelefono());
         emailEditText.setText(contacto.getEmail());
+        nickEditText.setText(contacto.getNick());
 
         guardarButton = findViewById(R.id.buttonGuardar);
         guardarButton.setOnClickListener(new View.OnClickListener() {
@@ -102,6 +105,7 @@ public class EditarContacto extends AppCompatActivity {
                                 contactRef.child(clave).child("nombre").setValue(nombreEditText.getText().toString());
                                 contactRef.child(clave).child("direccion").setValue(dirEditText.getText().toString());
                                 contactRef.child(clave).child("email").setValue(emailEditText.getText().toString());
+                                contactRef.child(clave).child("nick").setValue(nickEditText.getText().toString());
                             }
                         }
 

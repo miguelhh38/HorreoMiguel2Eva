@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,8 +31,10 @@ public class NuevoContacto extends AppCompatActivity {
     EditText emailEditText;
     EditText dirEditText;
     EditText telfEditText;
+    EditText nickEditText;
     private DatabaseReference contactRef;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,7 @@ public class NuevoContacto extends AppCompatActivity {
         emailEditText = findViewById(R.id.emailEditText);
         dirEditText = findViewById(R.id.dirEditText);
         telfEditText = findViewById(R.id.telfEditText);
+        nickEditText = findViewById(R.id.nickEditText);
 
         volverButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,12 +90,16 @@ public class NuevoContacto extends AppCompatActivity {
                             if (!numeroValido(telfEditText.getText().toString())) {
                                 errores += "El teléfono no es válido.\n";
                             }
+                            if (nickEditText.getText().length()<2) {
+                                errores += "El nick no es válido";
+                            }
                         }
 
                         if (errores.isEmpty()) {
                             Contacto contacto = new Contacto(nombreEditText.getText().toString(),
                                     emailEditText.getText().toString(),
-                                    telfEditText.getText().toString(), dirEditText.getText().toString());
+                                    telfEditText.getText().toString(), dirEditText.getText().toString(),
+                                    nickEditText.getText().toString());
 
                             contactRef.push().setValue(contacto);
                             Toast.makeText(NuevoContacto.this, "Contacto guardado!", Toast.LENGTH_SHORT).show();

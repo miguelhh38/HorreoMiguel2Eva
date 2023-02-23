@@ -10,15 +10,25 @@ public class Contacto implements Serializable {
     public String email;
     public String telefono;
     public String direccion;
+    public String nick;
 
     public Contacto() {
 
     }
-    public Contacto(String nombre, String email, String telefono, String direccion) {
+    public Contacto(String nombre, String email, String telefono, String direccion, String nick) {
         this.nombre = nombre;
         this.email = email;
         this.telefono = telefono;
         this.direccion = direccion;
+        this.nick = nick;
+    }
+
+    public String getNick() {
+        return nick;
+    }
+
+    public void setNick(String nick) {
+        this.nick = nick;
     }
 
     public String getNombre() {

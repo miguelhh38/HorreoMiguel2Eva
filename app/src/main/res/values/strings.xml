@@ -11,6 +11,7 @@
     <!--pantalla menuagenda-->
     <string name="button01">NUEVO CONTACTO</string>
     <string name="button02">CONTACTOS</string>
+    <string name="button03">NOTA</string>
 
 
     <!--pantalla agenda-->
@@ -20,11 +21,13 @@
     <string name="direccionTEXT">Dirección:</string>
     <string name="infodirTEXT">Debe de introducir la dirección de nuevo contacto.</string>
     <string name="emailTEXT">Email:</string>
-    <string name="infomailTEXT">Debe de introducir el email de nuevo contacto</string>
+    <string name="infomailTEXT">Debe de introducir el email de nuevo contacto.</string>
     <string name="telefonoTEXT">Telefono:</string>
-    <string name="infotelTEXT">Debe de introducir el teléfono de nuevo contacto</string>
-    <string name="buttonGuardar">GUARDAR CONTACTO</string>
+    <string name="infotelTEXT">Debe de introducir el teléfono de nuevo contacto.</string>
+    <string name="buttonGuardar">GUARDAR</string>
     <string name="buttonCancelar">VOLVER ATRÁS</string>
+    <string name="nickTEXT">Alias/Nick:</string>
+    <string name="infoNick">Debe de introducir el alias del nuevo contacto.</string>
 
     <!--pantalla lista-->
     <string name="buttonEliminar">ELIMINAR</string>
@@ -38,8 +41,15 @@
     <string name="datoscontacto">DATOS DEL CONTACTO</string>
     <string name="llamarButton">LLAMAR</string>
 
-    <string name="buttonActualizar">ACTUALIZAR CONTACTO</string>
+    <string name="buttonActualizar">ACTUALIZAR</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--nota-->
+    <string name="buttonEditarNota">EDITAR</string>
+    <string name="notaTEXT">NOTA</string>
+    <string name="tituloTEXTNota">TITULO:</string>
+    <string name="contenidoTEXT">CONTENIDO:</string>
 
 </resources>

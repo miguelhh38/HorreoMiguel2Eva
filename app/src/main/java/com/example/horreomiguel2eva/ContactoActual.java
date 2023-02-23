@@ -26,11 +26,13 @@ public class ContactoActual extends AppCompatActivity {
     TextView telefono;
     TextView dir;
     TextView mail;
+    TextView nick;
 
     Button volver;
     Button llamar;
     Button eliminar;
     Button editar;
+
 
     private DatabaseReference contactRef = FirebaseDatabase.getInstance().getReference();
 
@@ -44,6 +46,7 @@ public class ContactoActual extends AppCompatActivity {
         telefono = findViewById(R.id.textView20);
         mail = findViewById(R.id.textView22);
         dir = findViewById(R.id.textView21);
+        nick = findViewById(R.id.textView26);
 
 
         Intent intent = getIntent();
@@ -65,11 +68,9 @@ public class ContactoActual extends AppCompatActivity {
         dir.setText(contactoActual.getDireccion());
 
         mail.setText(contactoActual.getEmail());
+        nick.setText(contactoActual.getNick());
 
-
-
-
-
+        
         editar = findViewById(R.id.button);
         editar.setOnClickListener(new View.OnClickListener() {
             @Override
